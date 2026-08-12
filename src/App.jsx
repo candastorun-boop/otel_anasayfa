@@ -81,38 +81,38 @@ const hotelCampaigns = [
     title: "Yaz Fırsatlarını Kaçırma",
     description: "%50'ye varan indirimlerle tatilini planla.",
     href: "https://www.etstur.com/Yaz-Firsatli-Oteller",
-    image: "/assets/campaigns/yaz-firsatlari.jpg",
+    image: "assets/campaigns/yaz-firsatlari.jpg",
   },
   {
     title: "Maximum'lu ol",
     description: "Şimdi kartını seç, fırsatlardan yararlan!",
     href: "https://www.isbank.com.tr/kredi-karti-basvuru?productId=18&site=ets",
-    image: "/assets/campaigns/maximumlu-ol.jpg",
+    image: "assets/campaigns/maximumlu-ol.jpg",
     external: true,
   },
   {
     title: "Fleur Bay Resort",
     description: "Avantajlarla dolu bir tatil seni bekliyor!",
     href: "https://www.etstur.com/Fleur-Bay-Resort",
-    image: "/assets/campaigns/fleur-bay-resort.jpg",
+    image: "assets/campaigns/fleur-bay-resort.jpg",
   },
   {
     title: "7.500 TL'ye Varan MaxiPuan Fırsatı!",
     description: "Son gün 31 Ağustos. Tatil planına ekstra avantaj kat.",
     href: "https://www.etstur.com/Kampanyalar/Maximum-ile-7500-TL-ye-Varan-Maxipuan-Kazanim-Kampanyasi",
-    image: "/assets/campaigns/maxipuan.jpg",
+    image: "assets/campaigns/maxipuan.jpg",
   },
   {
     title: "Ücretsiz Geceleme Fırsatı Kaçmaz!",
     description: "Seçili otellerde tatilinin 1 gecesi hediye.",
     href: "https://www.etstur.com/Kampanyalar/Ucretsiz-Geceleme-Firsati-Kampanyasi",
-    image: "/assets/campaigns/ucretsiz-geceleme.jpg",
+    image: "assets/campaigns/ucretsiz-geceleme.jpg",
   },
   {
     title: "Yeni Üyelere Özel 1.500 TL İndirim Kuponu!",
     description: "UYE1500 kodu ile avantajlı bir tatil için üye ol.",
     href: "https://www.etstur.com/Kampanyalar/Yeni-Uyelere-Ozel-Kupon-Kampanyasi",
-    image: "/assets/campaigns/yeni-uye-kuponu.jpg",
+    image: "assets/campaigns/yeni-uye-kuponu.jpg",
   },
 ];
 
@@ -124,7 +124,7 @@ const offerCards = [
     count: "557",
     promotion: "%35'e varan indirim",
     href: "https://www.etstur.com/Erken-Rezervasyon-Otelleri",
-    image: "/assets/popular-belek.jpg",
+    image: "assets/popular-belek.jpg",
     tone: "orange",
     icon: CalendarDays,
   },
@@ -134,7 +134,7 @@ const offerCards = [
     badge: "2 çocuğa kadar ücretsiz konaklama",
     count: "104",
     href: "https://www.etstur.com/2-Cocuk-Ucretsiz-Oteller",
-    image: "/assets/theme-kids.jpg",
+    image: "assets/theme-kids.jpg",
     tone: "green",
     icon: Users,
   },
@@ -145,7 +145,7 @@ const offerCards = [
     count: "197",
     promotion: "%60'a varan indirim",
     href: "https://www.etstur.com/Son-Dakika-Tatil-Firsatlari",
-    image: "/assets/theme-sea.jpg",
+    image: "assets/theme-sea.jpg",
     tone: "red",
     icon: Clock3,
   },
@@ -154,19 +154,19 @@ const offerCards = [
 const categoryCards = [
   {
     title: "Yurt İçi Oteller",
-    image: "/assets/domestic-hotels.jpg",
+    image: "assets/domestic-hotels.jpg",
     links: ["Belek Otelleri", "Bodrum Otelleri", "Didim Otelleri", "Kemer Otelleri"],
     action: "Tüm Yurt İçi Oteller",
   },
   {
     title: "Şehir Otelleri",
-    image: "/assets/city-hotels.jpg",
+    image: "assets/city-hotels.jpg",
     links: ["İstanbul Otelleri", "İzmir Otelleri", "Ankara Otelleri", "Bursa Otelleri"],
     action: "Tüm Şehir Otelleri",
   },
   {
     title: "Kıbrıs Otelleri",
-    image: "/assets/cyprus-hotels.jpg",
+    image: "assets/cyprus-hotels.jpg",
     links: ["Bafra Otelleri", "Girne Otelleri", "Mağusa Otelleri", "Lefkoşa Otelleri"],
     action: "Tüm Kıbrıs Otelleri",
   },
@@ -236,12 +236,12 @@ const themes = [
 ];
 
 const popularRegions = [
-  { title: "Belek Otelleri", image: "/assets/popular-belek.jpg", count: "145 tesis", href: "https://www.etstur.com/Belek-Otelleri" },
-  { title: "Alanya Otelleri", image: "/assets/popular-alanya.jpg", count: "312 tesis", href: "https://www.etstur.com/Alanya-Otelleri" },
-  { title: "Sapanca Otelleri", image: "/assets/popular-sapanca.jpg", count: "168 tesis", href: "https://www.etstur.com/Sapanca-Otelleri" },
-  { title: "Bodrum Otelleri", image: "/assets/popular-bodrum.jpg", count: "286 tesis", href: "https://www.etstur.com/Bodrum-Otelleri" },
-  { title: "Fethiye Otelleri", image: "/assets/theme-sea.jpg", count: "224 tesis", href: "https://www.etstur.com/Fethiye-Otelleri" },
-  { title: "Marmaris Otelleri", image: "/assets/theme-honeymoon.jpg", count: "198 tesis", href: "https://www.etstur.com/Marmaris-Otelleri" },
+  { title: "Belek Otelleri", image: "assets/popular-belek.jpg", count: "145 tesis", href: "https://www.etstur.com/Belek-Otelleri" },
+  { title: "Alanya Otelleri", image: "assets/popular-alanya.jpg", count: "312 tesis", href: "https://www.etstur.com/Alanya-Otelleri" },
+  { title: "Sapanca Otelleri", image: "assets/popular-sapanca.jpg", count: "168 tesis", href: "https://www.etstur.com/Sapanca-Otelleri" },
+  { title: "Bodrum Otelleri", image: "assets/popular-bodrum.jpg", count: "286 tesis", href: "https://www.etstur.com/Bodrum-Otelleri" },
+  { title: "Fethiye Otelleri", image: "assets/theme-sea.jpg", count: "224 tesis", href: "https://www.etstur.com/Fethiye-Otelleri" },
+  { title: "Marmaris Otelleri", image: "assets/theme-honeymoon.jpg", count: "198 tesis", href: "https://www.etstur.com/Marmaris-Otelleri" },
 ];
 
 const vacationRegionChips = [
@@ -254,19 +254,19 @@ const vacationRegionChips = [
 ];
 
 const popularThemes = [
-  { title: "Otelpuan Ödüllü Tesisler", image: "/assets/theme-award.jpg", count: "Seçkin oteller" },
-  { title: "2 Çocuk Ücretsiz Oteller", image: "/assets/theme-kids.jpg", count: "Aile fırsatları" },
-  { title: "Denize Sıfır Oteller", image: "/assets/theme-sea.jpg", count: "Sahilde tatil" },
-  { title: "Balayı Villaları", image: "/assets/theme-honeymoon.jpg", count: "Romantik kaçamak" },
+  { title: "Otelpuan Ödüllü Tesisler", image: "assets/theme-award.jpg", count: "Seçkin oteller" },
+  { title: "2 Çocuk Ücretsiz Oteller", image: "assets/theme-kids.jpg", count: "Aile fırsatları" },
+  { title: "Denize Sıfır Oteller", image: "assets/theme-sea.jpg", count: "Sahilde tatil" },
+  { title: "Balayı Villaları", image: "assets/theme-honeymoon.jpg", count: "Romantik kaçamak" },
 ];
 
 const cityRegions = [
-  { title: "İstanbul Otelleri", image: "/assets/city-istanbul.jpg", count: "1.460 tesis", href: "https://www.etstur.com/Istanbul-Otelleri" },
-  { title: "Ankara Otelleri", image: "/assets/city-ankara.jpg", count: "428 tesis", href: "https://www.etstur.com/Ankara-Otelleri" },
-  { title: "Nevşehir Otelleri", image: "/assets/city-nevsehir.jpg", count: "356 tesis", href: "https://www.etstur.com/Nevsehir-Otelleri" },
-  { title: "Muğla Otelleri", image: "/assets/city-mugla.jpg", count: "1.120 tesis", href: "https://www.etstur.com/Mugla-Otelleri" },
-  { title: "İzmir Otelleri", image: "/assets/city-hotels.jpg", count: "684 tesis", href: "https://www.etstur.com/Izmir-Otelleri" },
-  { title: "Bursa Otelleri", image: "/assets/domestic-hotels.jpg", count: "246 tesis", href: "https://www.etstur.com/Bursa-Otelleri" },
+  { title: "İstanbul Otelleri", image: "assets/city-istanbul.jpg", count: "1.460 tesis", href: "https://www.etstur.com/Istanbul-Otelleri" },
+  { title: "Ankara Otelleri", image: "assets/city-ankara.jpg", count: "428 tesis", href: "https://www.etstur.com/Ankara-Otelleri" },
+  { title: "Nevşehir Otelleri", image: "assets/city-nevsehir.jpg", count: "356 tesis", href: "https://www.etstur.com/Nevsehir-Otelleri" },
+  { title: "Muğla Otelleri", image: "assets/city-mugla.jpg", count: "1.120 tesis", href: "https://www.etstur.com/Mugla-Otelleri" },
+  { title: "İzmir Otelleri", image: "assets/city-hotels.jpg", count: "684 tesis", href: "https://www.etstur.com/Izmir-Otelleri" },
+  { title: "Bursa Otelleri", image: "assets/domestic-hotels.jpg", count: "246 tesis", href: "https://www.etstur.com/Bursa-Otelleri" },
 ];
 
 const cityRegionChips = [
@@ -279,12 +279,12 @@ const cityRegionChips = [
 ];
 
 const cyprusRegions = [
-  { title: "Lefkoşa Otelleri", image: "/assets/cyprus-lefkosa.jpg", count: "Şehir otelleri", href: "https://www.etstur.com/Lefkosa-Otelleri" },
-  { title: "Girne Otelleri", image: "/assets/cyprus-girne.jpg", count: "Sahil otelleri", href: "https://www.etstur.com/Girne-Otelleri" },
-  { title: "Bafra Otelleri", image: "/assets/cyprus-bafra.jpg", count: "Resort oteller", href: "https://www.etstur.com/Bafra-Otelleri" },
-  { title: "Gazimağusa Otelleri", image: "/assets/cyprus-gazimagusa.jpg", count: "Tarihi rota", href: "https://www.etstur.com/Gazimagusa-Otelleri" },
-  { title: "İskele Otelleri", image: "/assets/cyprus-hotels.jpg", count: "Sahil otelleri", href: "https://www.etstur.com/Iskele-Otelleri" },
-  { title: "Güzelyurt Otelleri", image: "/assets/cyprus-girne.jpg", count: "Ada konaklaması", href: "https://www.etstur.com/Guzelyurt-Otelleri" },
+  { title: "Lefkoşa Otelleri", image: "assets/cyprus-lefkosa.jpg", count: "Şehir otelleri", href: "https://www.etstur.com/Lefkosa-Otelleri" },
+  { title: "Girne Otelleri", image: "assets/cyprus-girne.jpg", count: "Sahil otelleri", href: "https://www.etstur.com/Girne-Otelleri" },
+  { title: "Bafra Otelleri", image: "assets/cyprus-bafra.jpg", count: "Resort oteller", href: "https://www.etstur.com/Bafra-Otelleri" },
+  { title: "Gazimağusa Otelleri", image: "assets/cyprus-gazimagusa.jpg", count: "Tarihi rota", href: "https://www.etstur.com/Gazimagusa-Otelleri" },
+  { title: "İskele Otelleri", image: "assets/cyprus-hotels.jpg", count: "Sahil otelleri", href: "https://www.etstur.com/Iskele-Otelleri" },
+  { title: "Güzelyurt Otelleri", image: "assets/cyprus-girne.jpg", count: "Ada konaklaması", href: "https://www.etstur.com/Guzelyurt-Otelleri" },
 ];
 
 const hotelTypeGroups = [
@@ -292,7 +292,7 @@ const hotelTypeGroups = [
     title: "Konaklama Türüne Göre",
     icon: BedDouble,
     tone: "blue",
-    image: "/assets/popular-sapanca.jpg",
+    image: "assets/popular-sapanca.jpg",
     description: "Doğayla iç içe konaklamalardan şehir merkezindeki alternatiflere kadar farklı tesis türlerini keşfedin.",
     links: [
       { label: "Bungalov Evleri", href: "https://www.etstur.com/Bungalov-Evleri", icon: Trees },
@@ -309,7 +309,7 @@ const hotelTypeGroups = [
     title: "Konseptine Göre Oteller",
     icon: Check,
     tone: "green",
-    image: "/assets/domestic-hotels.jpg",
+    image: "assets/domestic-hotels.jpg",
     description: "Yeme içme hizmetlerinin kapsamına göre tatilinize en uygun otel konseptini kolayca karşılaştırın.",
     links: [
       { label: "Ultra Her Şey Dahil Oteller", href: "https://www.etstur.com/Ultra-Her-Sey-Dahil-Oteller", icon: Sparkles },
@@ -325,7 +325,7 @@ const hotelTypeGroups = [
     title: "Tatil Tarzına Göre",
     icon: Sparkles,
     tone: "orange",
-    image: "/assets/theme-honeymoon.jpg",
+    image: "assets/theme-honeymoon.jpg",
     description: "Dinlenme, romantik kaçamak, aile tatili veya kış macerası için öne çıkan otelleri inceleyin.",
     links: [
       { label: "Evcil Hayvan Dostu Oteller", href: "https://www.etstur.com/Evcil-Hayvan-Dostu-Oteller", icon: PawPrint },
@@ -343,7 +343,7 @@ const hotelTypeGroups = [
     title: "Özelliklerine Göre",
     icon: ShieldCheck,
     tone: "teal",
-    image: "/assets/theme-sea.jpg",
+    image: "assets/theme-sea.jpg",
     description: "Plaj, havuz, aquapark ve SPA gibi tatil deneyiminizi belirleyen özelliklere göre seçim yapın.",
     links: [
       { label: "Aquaparklı Oteller", href: "https://www.etstur.com/Aquapark-Otelleri", icon: Umbrella },
@@ -378,32 +378,32 @@ const roomTypeGallery = [
   {
     title: "Standart Oda",
     description: "Bir veya iki kişi için temel konfor sunan, en sık tercih edilen oda.",
-    image: "/assets/room-types/standard-room.jpg",
+    image: "assets/room-types/standard-room.jpg",
   },
   {
     title: "Aile Odası",
     description: "Çocuklu aileler için daha geniş, bazen ara kapılı yatak düzeni.",
-    image: "/assets/room-types/family-room.jpg",
+    image: "assets/room-types/family-room.jpg",
   },
   {
     title: "Süit Oda",
     description: "Yatak odası ile oturma alanını ayıran daha geniş bir oda tipi.",
-    image: "/assets/room-types/suite-room.jpg",
+    image: "assets/room-types/suite-room.jpg",
   },
   {
     title: "Swim-Up Oda",
     description: "Terasından ortak veya özel havuza doğrudan geçiş sağlar.",
-    image: "/assets/room-types/swim-up-room.jpg",
+    image: "assets/room-types/swim-up-room.jpg",
   },
   {
     title: "Villa",
     description: "Bağımsız giriş, geniş yaşam alanı ve daha fazla mahremiyet sunar.",
-    image: "/assets/room-types/villa-room.jpg",
+    image: "assets/room-types/villa-room.jpg",
   },
   {
     title: "Apart Oda",
     description: "Mutfak ve oturma alanıyla uzun konaklamalara uygun bir düzen sunar.",
-    image: "/assets/room-types/apart-room.jpg",
+    image: "assets/room-types/apart-room.jpg",
   },
 ];
 
@@ -504,7 +504,7 @@ const popularHotels = [
     title: "Voyage Kundu",
     location: "Lara-Kundu, Antalya",
     href: "https://www.etstur.com/Voyage-Kundu",
-    image: "/assets/popular-hotels/voyage-kundu.jpg",
+    image: "assets/popular-hotels/voyage-kundu.jpg",
     score: "8.6",
     scoreLabel: "Çok iyi",
     reviews: "532 değerlendirme",
@@ -514,7 +514,7 @@ const popularHotels = [
     title: "Anda Barut Collection",
     location: "Didim, Aydın",
     href: "https://www.etstur.com/Anda-Barut-Collection",
-    image: "/assets/popular-hotels/anda-barut-collection.jpg",
+    image: "assets/popular-hotels/anda-barut-collection.jpg",
     score: "9.3",
     scoreLabel: "Mükemmel",
     reviews: "1.430 değerlendirme",
@@ -524,7 +524,7 @@ const popularHotels = [
     title: "Kremlin Palace",
     location: "Lara-Kundu, Antalya",
     href: "https://www.etstur.com/Kremlin-Palace",
-    image: "/assets/popular-hotels/kremlin-palace.jpg",
+    image: "assets/popular-hotels/kremlin-palace.jpg",
     score: "8.4",
     scoreLabel: "Çok iyi",
     reviews: "4.756 değerlendirme",
@@ -534,7 +534,7 @@ const popularHotels = [
     title: "Mirage Park Resort",
     location: "Göynük, Kemer",
     href: "https://www.etstur.com/Mirage-Park-Resort",
-    image: "/assets/popular-hotels/mirage-park-resort.jpg",
+    image: "assets/popular-hotels/mirage-park-resort.jpg",
     score: "9.0",
     scoreLabel: "Mükemmel",
     reviews: "1.191 değerlendirme",
@@ -544,7 +544,7 @@ const popularHotels = [
     title: "Grand Hotel Ontur",
     location: "Çeşme, İzmir",
     href: "https://www.etstur.com/Grand-Hotel-Ontur",
-    image: "/assets/popular-hotels/grand-hotel-ontur.jpg",
+    image: "assets/popular-hotels/grand-hotel-ontur.jpg",
     score: "7.7",
     scoreLabel: "İyi",
     reviews: "777 değerlendirme",
@@ -554,7 +554,7 @@ const popularHotels = [
     title: "Nirvana Dolce Vita",
     location: "Tekirova, Kemer",
     href: "https://www.etstur.com/Nirvana-Dolce-Vita",
-    image: "/assets/popular-hotels/nirvana-dolce-vita.jpg",
+    image: "assets/popular-hotels/nirvana-dolce-vita.jpg",
     score: "8.8",
     scoreLabel: "Çok iyi",
     reviews: "2.272 değerlendirme",
@@ -564,7 +564,7 @@ const popularHotels = [
     title: "Vikingen Infinity Resort & Spa",
     location: "Türkler, Alanya",
     href: "https://www.etstur.com/Vikingen-Infinity-Resort-Spa",
-    image: "/assets/popular-hotels/vikingen-infinity.jpg",
+    image: "assets/popular-hotels/vikingen-infinity.jpg",
     score: "7.8",
     scoreLabel: "İyi",
     reviews: "3.658 değerlendirme",
@@ -574,7 +574,7 @@ const popularHotels = [
     title: "Starlight Resort Hotel",
     location: "Manavgat, Antalya",
     href: "https://www.etstur.com/Starlight-Resort-Hotel",
-    image: "/assets/popular-hotels/starlight-resort-hotel.jpg",
+    image: "assets/popular-hotels/starlight-resort-hotel.jpg",
     score: "9.3",
     scoreLabel: "Mükemmel",
     reviews: "1.407 değerlendirme",
@@ -587,7 +587,7 @@ const cityPopularHotels = [
     title: "Anemon Koleksiyon Galata Otel",
     location: "Beyoğlu, İstanbul",
     href: "https://www.etstur.com/Anemon-Koleksiyon-Galata-Otel",
-    image: "/assets/popular-hotels/anemon-galata.jpg",
+    image: "assets/popular-hotels/anemon-galata.jpg",
     score: "8.7",
     scoreLabel: "Çok iyi",
     reviews: "144 değerlendirme",
@@ -597,7 +597,7 @@ const cityPopularHotels = [
     title: "Hilton İstanbul Kozyatağı",
     location: "Kadıköy, İstanbul",
     href: "https://www.etstur.com/Hilton-Istanbul-Kozyatagi",
-    image: "/assets/popular-hotels/hilton-kozyatagi.jpg",
+    image: "assets/popular-hotels/hilton-kozyatagi.jpg",
     score: "7.9",
     scoreLabel: "İyi",
     reviews: "1.405 değerlendirme",
@@ -607,7 +607,7 @@ const cityPopularHotels = [
     title: "Rixos Tersane Istanbul + Nickelodeon Play Tersane Access",
     location: "Beyoğlu, İstanbul",
     href: "https://www.etstur.com/Rixos-Tersane-Istanbul---Nickelodeon-Play-Tersane-Access",
-    image: "/assets/popular-hotels/rixos-tersane.jpg",
+    image: "assets/popular-hotels/rixos-tersane.jpg",
     score: "9.3",
     scoreLabel: "Mükemmel",
     reviews: "136 değerlendirme",
@@ -617,7 +617,7 @@ const cityPopularHotels = [
     title: "Sheraton Grand İstanbul Ataşehir",
     location: "Ataşehir, İstanbul",
     href: "https://www.etstur.com/Sheraton-Grand-Istanbul-Atasehir",
-    image: "/assets/popular-hotels/sheraton-atasehir.jpg",
+    image: "assets/popular-hotels/sheraton-atasehir.jpg",
     score: "9.4",
     scoreLabel: "Mükemmel",
     reviews: "107 değerlendirme",
@@ -630,7 +630,7 @@ const cyprusPopularHotels = [
     title: "Concorde Aria Hotel",
     location: "Bafra, Kuzey Kıbrıs",
     href: "https://www.etstur.com/Concorde-Aria-Hotel",
-    image: "/assets/popular-hotels/concorde-aria.jpg",
+    image: "assets/popular-hotels/concorde-aria.jpg",
     score: "9.5",
     scoreLabel: "Mükemmel",
     reviews: "34 değerlendirme",
@@ -640,7 +640,7 @@ const cyprusPopularHotels = [
     title: "Elexus Hotel Resort Casino",
     location: "Çatalköy, Girne",
     href: "https://www.etstur.com/Elexus-Hotel-Resort-Casino",
-    image: "/assets/popular-hotels/elexus.jpg",
+    image: "assets/popular-hotels/elexus.jpg",
     score: "9.8",
     scoreLabel: "Mükemmel",
     reviews: "6.153 değerlendirme",
@@ -650,7 +650,7 @@ const cyprusPopularHotels = [
     title: "Acapulco Resort Convention Spa",
     location: "Çatalköy, Girne",
     href: "https://www.etstur.com/Acapulco-Resort-Convention-Spa",
-    image: "/assets/popular-hotels/acapulco.jpg",
+    image: "assets/popular-hotels/acapulco.jpg",
     score: "7.7",
     scoreLabel: "İyi",
     reviews: "3.727 değerlendirme",
@@ -660,7 +660,7 @@ const cyprusPopularHotels = [
     title: "Cratos Premium Hotel Casino Port Spa",
     location: "Çatalköy, Girne",
     href: "https://www.etstur.com/Cratos-Premium-Hotel-Casino-Port-Spa",
-    image: "/assets/popular-hotels/cratos-premium.jpg",
+    image: "assets/popular-hotels/cratos-premium.jpg",
     score: "8.7",
     scoreLabel: "Çok iyi",
     reviews: "1.551 değerlendirme",
@@ -673,7 +673,7 @@ const internationalPopularHotels = [
     title: "Rixos Sharm El Sheikh (Adult-Only +18)",
     location: "Şarm El-Şeyh, Mısır",
     href: "https://www.etstur.com/Rixos-Sharm-El-Sheikh-Adult-only-18-",
-    image: "/assets/popular-hotels/rixos-sharm-adult.jpg",
+    image: "assets/popular-hotels/rixos-sharm-adult.jpg",
     score: "9.0",
     scoreLabel: "Çok iyi",
     reviews: "100 değerlendirme",
@@ -683,7 +683,7 @@ const internationalPopularHotels = [
     title: "Rixos Premium Seagate Sharm El Sheikh",
     location: "Şarm El-Şeyh, Mısır",
     href: "https://www.etstur.com/Rixos-Premium-Seagate",
-    image: "/assets/popular-hotels/rixos-premium-seagate.jpg",
+    image: "assets/popular-hotels/rixos-premium-seagate.jpg",
     score: "8.8",
     scoreLabel: "Çok iyi",
     reviews: "135 değerlendirme",
@@ -693,7 +693,7 @@ const internationalPopularHotels = [
     title: "Swissotel Sharm El Sheikh All Inclusive Collection",
     location: "Şarm El-Şeyh, Mısır",
     href: "https://www.etstur.com/Swissotel-Sharm-El-Sheikh-All-Inclusive-Collection",
-    image: "/assets/popular-hotels/swissotel-sharm.jpg",
+    image: "assets/popular-hotels/swissotel-sharm.jpg",
     score: "8.6",
     scoreLabel: "Çok iyi",
     reviews: "80 değerlendirme",
@@ -703,7 +703,7 @@ const internationalPopularHotels = [
     title: "Rixos Radamis Beach Hotel",
     location: "Şarm El-Şeyh, Mısır",
     href: "https://www.etstur.com/Rixos-Radamis-Beach-Hotel",
-    image: "/assets/popular-hotels/rixos-radamis-beach.jpg",
+    image: "assets/popular-hotels/rixos-radamis-beach.jpg",
     score: "8.8",
     scoreLabel: "Çok iyi",
     reviews: "7 değerlendirme",
@@ -818,7 +818,7 @@ const affordableHotels = [
     title: "Julian Club Hotel",
     location: "Armutalan, Marmaris",
     href: "https://www.etstur.com/Julian-Club-Hotel",
-    image: "/assets/popular-hotels/julian-club-hotel.jpg",
+    image: "assets/popular-hotels/julian-club-hotel.jpg",
     score: "9.0",
     scoreLabel: "Çok iyi",
     reviews: "460 değerlendirme",
@@ -829,7 +829,7 @@ const affordableHotels = [
     title: "Hotel Esra Family",
     location: "Altınkum, Didim",
     href: "https://www.etstur.com/Hotel-Esra-Family",
-    image: "/assets/popular-hotels/hotel-esra-family.jpg",
+    image: "assets/popular-hotels/hotel-esra-family.jpg",
     score: "9.0",
     scoreLabel: "Çok iyi",
     reviews: "718 değerlendirme",
@@ -840,7 +840,7 @@ const affordableHotels = [
     title: "Sundia By Liberty Ölüdeniz",
     location: "Ölüdeniz, Fethiye",
     href: "https://www.etstur.com/Sundia-By-Liberty-Oludeniz",
-    image: "/assets/popular-hotels/sundia-oludeniz.jpg",
+    image: "assets/popular-hotels/sundia-oludeniz.jpg",
     score: "8.9",
     scoreLabel: "Çok iyi",
     reviews: "654 değerlendirme",
@@ -851,7 +851,7 @@ const affordableHotels = [
     title: "Grand Paşa Hotel",
     location: "Marmaris, Muğla",
     href: "https://www.etstur.com/Grand-Pasa-Hotel",
-    image: "/assets/popular-hotels/grand-pasa-hotel.jpg",
+    image: "assets/popular-hotels/grand-pasa-hotel.jpg",
     score: "8.9",
     scoreLabel: "Çok iyi",
     reviews: "219 değerlendirme",
@@ -862,7 +862,7 @@ const affordableHotels = [
     title: "Ephesia Resort Hotel",
     location: "Kuşadası, Aydın",
     href: "https://www.etstur.com/Ephesia-Resort-Hotel",
-    image: "/assets/popular-hotels/ephesia-resort.jpg",
+    image: "assets/popular-hotels/ephesia-resort.jpg",
     score: "8.2",
     scoreLabel: "Çok iyi",
     reviews: "2.350 değerlendirme",
@@ -873,7 +873,7 @@ const affordableHotels = [
     title: "Garden Of Sun Hotel",
     location: "Didim, Aydın",
     href: "https://www.etstur.com/Garden-Of-Sun-Hotel",
-    image: "/assets/popular-hotels/garden-of-sun.jpg",
+    image: "assets/popular-hotels/garden-of-sun.jpg",
     score: "8.1",
     scoreLabel: "Çok iyi",
     reviews: "2.997 değerlendirme",
@@ -884,7 +884,7 @@ const affordableHotels = [
     title: "Club Müskebi",
     location: "Ortakent, Bodrum",
     href: "https://www.etstur.com/Club-Muskebi",
-    image: "/assets/popular-hotels/club-muskebi.jpg",
+    image: "assets/popular-hotels/club-muskebi.jpg",
     score: "8.1",
     scoreLabel: "Çok iyi",
     reviews: "2.022 değerlendirme",
@@ -895,7 +895,7 @@ const affordableHotels = [
     title: "Bitez Risa Hotel",
     location: "Bitez, Bodrum",
     href: "https://www.etstur.com/Bitez-Risa-Hotel",
-    image: "/assets/popular-hotels/bitez-risa.jpg",
+    image: "assets/popular-hotels/bitez-risa.jpg",
     score: "7.8",
     scoreLabel: "İyi",
     reviews: "809 değerlendirme",
@@ -905,12 +905,12 @@ const affordableHotels = [
 ];
 
 const internationalRegions = [
-  { title: "Dubai Otelleri", image: "/assets/city-hotels.jpg", count: "Şehir ve sahil otelleri", href: "https://www.etstur.com/dubai-60715" },
-  { title: "Mısır Otelleri", image: "/assets/theme-sea.jpg", count: "Resort oteller", href: "https://www.etstur.com/egypt-690" },
-  { title: "Bali Otelleri", image: "/assets/popular-bodrum.jpg", count: "Ada otelleri", href: "https://www.etstur.com/bali-133706" },
-  { title: "Roma Otelleri", image: "/assets/theme-award.jpg", count: "Merkezi konaklama", href: "https://www.etstur.com/rome-160741" },
-  { title: "Şarm El-Şeyh Otelleri", image: "/assets/theme-kids.jpg", count: "Kızıldeniz tatili", href: "https://www.etstur.com/sharm-el-sheikh-281105" },
-  { title: "Marsa Alam Otelleri", image: "/assets/theme-honeymoon.jpg", count: "Sahil otelleri", href: "https://www.etstur.com/marsa-alam-241172" },
+  { title: "Dubai Otelleri", image: "assets/city-hotels.jpg", count: "Şehir ve sahil otelleri", href: "https://www.etstur.com/dubai-60715" },
+  { title: "Mısır Otelleri", image: "assets/theme-sea.jpg", count: "Resort oteller", href: "https://www.etstur.com/egypt-690" },
+  { title: "Bali Otelleri", image: "assets/popular-bodrum.jpg", count: "Ada otelleri", href: "https://www.etstur.com/bali-133706" },
+  { title: "Roma Otelleri", image: "assets/theme-award.jpg", count: "Merkezi konaklama", href: "https://www.etstur.com/rome-160741" },
+  { title: "Şarm El-Şeyh Otelleri", image: "assets/theme-kids.jpg", count: "Kızıldeniz tatili", href: "https://www.etstur.com/sharm-el-sheikh-281105" },
+  { title: "Marsa Alam Otelleri", image: "assets/theme-honeymoon.jpg", count: "Sahil otelleri", href: "https://www.etstur.com/marsa-alam-241172" },
 ];
 
 const internationalRegionChips = [
@@ -1114,7 +1114,7 @@ function Header() {
           <Menu size={21} />
         </button>
         <a className="brand" href="#top" aria-label="Etstur ana sayfa">
-          <img src="/assets/etstur-logo.svg" alt="Etstur 35. yıl" />
+          <img src="assets/etstur-logo.svg" alt="Etstur 35. yıl" />
         </a>
         <nav className="desktop-nav" aria-label="Ana navigasyon">
           {navigationLinks.map((item) => (
@@ -1139,7 +1139,7 @@ function Header() {
       {menuOpen ? (
         <div className="mobile-menu" role="dialog" aria-modal="true" aria-label="Mobil menü">
           <div className="mobile-menu-header">
-            <img src="/assets/etstur-logo.svg" alt="Etstur 35. yıl" />
+            <img src="assets/etstur-logo.svg" alt="Etstur 35. yıl" />
             <button className="icon-button" aria-label="Menüyü kapat" onClick={() => setMenuOpen(false)}>
               <X size={22} />
             </button>
@@ -2186,12 +2186,12 @@ function Footer() {
       </div>
       <div className="footer-bottom">
         <div className="footer-brand-row">
-          <img src="/assets/etstur-logo.svg" alt="Etstur 35. yıl" />
+          <img src="assets/etstur-logo.svg" alt="Etstur 35. yıl" />
           <span>Etstur Ersoy Turizm Seyahat Acentası Belge No: 2242</span>
         </div>
         <div className="store-links">
-          <a href="#top" aria-label="App Store uygulaması"><img src="/assets/app-store.png" alt="App Store'dan indirin" /></a>
-          <a href="#top" aria-label="Google Play uygulaması"><img src="/assets/google-play.png" alt="Google Play'den indirin" /></a>
+          <a href="#top" aria-label="App Store uygulaması"><img src="assets/app-store.png" alt="App Store'dan indirin" /></a>
+          <a href="#top" aria-label="Google Play uygulaması"><img src="assets/google-play.png" alt="Google Play'den indirin" /></a>
         </div>
         <p>Copyright © 2026 Ets Ersoy Turistik Servisleri A.Ş. Tüm hakları saklıdır.</p>
         <div className="legal-links">

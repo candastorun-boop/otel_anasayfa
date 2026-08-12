@@ -11,6 +11,7 @@ const devPreRender = {
 };
 
 export default defineConfig({
+  base: "/otel_anasayfa/",
   build: {
     outDir: "dist/client",
   },
