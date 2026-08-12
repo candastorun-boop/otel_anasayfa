@@ -2215,27 +2215,49 @@ function FAQ() {
 }
 
 function MoreHotels() {
+  const [activeGroup, setActiveGroup] = useState(0);
+
   return (
     <section className="more-hotels-section" aria-labelledby="more-hotels-title">
       <div className="more-hotels-heading">
-        <span>Alternatifleri incele</span>
         <h2 id="more-hotels-title">Daha Fazla Oteli Keşfedin</h2>
-        <p>Farklı bölgeler, otel temaları ve bölgeye özel konaklama seçenekleri arasından yeni alternatifler keşfedin.</p>
       </div>
 
-      <div className="more-hotels-groups">
-        {discoveryLinkGroups.map((group) => {
+      <div className="more-hotels-tabs" role="tablist" aria-label="Otel bağlantısı türü">
+        {discoveryLinkGroups.map((group, index) => (
+          <button
+            type="button"
+            role="tab"
+            id={`more-hotels-tab-${index}`}
+            aria-controls={`more-hotels-panel-${index}`}
+            aria-selected={activeGroup === index}
+            tabIndex={activeGroup === index ? 0 : -1}
+            key={group.title}
+            onClick={() => setActiveGroup(index)}
+          >
+            {group.title}
+          </button>
+        ))}
+      </div>
+
+      <div className="more-hotels-panels">
+        {discoveryLinkGroups.map((group, index) => {
           const Icon = group.icon;
           return (
-            <section className="more-hotels-group" data-tone={group.tone} key={group.title} aria-labelledby={`more-hotels-${group.tone}`}>
-              <h3 id={`more-hotels-${group.tone}`}>{group.title}</h3>
+            <section
+              className="more-hotels-panel"
+              role="tabpanel"
+              id={`more-hotels-panel-${index}`}
+              aria-labelledby={`more-hotels-tab-${index}`}
+              hidden={activeGroup !== index}
+              key={group.title}
+            >
               <ul>
                 {group.links.map((link) => (
                   <li key={link.href}>
                     <a href={link.href}>
-                      <Icon size={18} aria-hidden="true" />
+                      <Icon size={16} aria-hidden="true" />
                       <span>{link.label}</span>
-                      <ArrowRight size={16} aria-hidden="true" />
                     </a>
                   </li>
                 ))}
