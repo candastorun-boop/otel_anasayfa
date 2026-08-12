@@ -904,6 +904,45 @@ const affordableHotels = [
   },
 ];
 
+const hotelChains = [
+  {
+    title: "Voyage Otelleri",
+    description: "Seçkin sahil tesisleri ve kapsamlı tatil deneyimleri",
+    href: "https://www.etstur.com/Voyage-Otelleri",
+    image: "assets/popular-hotels/voyage-kundu.jpg",
+  },
+  {
+    title: "Rixos Otelleri",
+    description: "Türkiye ve yurt dışında premium resort seçenekleri",
+    href: "https://www.etstur.com/Rixos-Otelleri",
+    image: "assets/popular-hotels/rixos-premium-seagate.jpg",
+  },
+  {
+    title: "Crystal Otelleri",
+    description: "Akdeniz kıyılarında aile ve resort otelleri",
+    href: "https://www.etstur.com/Crystal-Otelleri",
+    image: "assets/hotel-chains/crystal-hotels.jpg",
+  },
+  {
+    title: "Kirman Premium Otelleri",
+    description: "Antalya ve Alanya'da premium konaklama alternatifleri",
+    href: "https://www.etstur.com/Kirman-Premium-Otelleri",
+    image: "assets/hotel-chains/kirman-premium-hotels.jpg",
+  },
+  {
+    title: "TUI Blue Otelleri",
+    description: "Farklı misafir profillerine özel tatil konseptleri",
+    href: "https://www.etstur.com/Tui-Blue-Otelleri",
+    image: "assets/hotel-chains/tui-blue-hotels.jpg",
+  },
+  {
+    title: "Eftalia Otelleri",
+    description: "Alanya bölgesinde aile odaklı sahil tesisleri",
+    href: "https://www.etstur.com/Eftalia-Otelleri",
+    image: "assets/hotel-chains/eftalia-hotels.jpg",
+  },
+];
+
 const internationalRegions = [
   { title: "Dubai Otelleri", image: "assets/city-hotels.jpg", count: "Şehir ve sahil otelleri", href: "https://www.etstur.com/dubai-60715" },
   { title: "Mısır Otelleri", image: "assets/theme-sea.jpg", count: "Resort oteller", href: "https://www.etstur.com/egypt-690" },
@@ -2125,6 +2164,40 @@ function AffordableHotelsSection() {
   );
 }
 
+function HotelChainsSection() {
+  const railRef = useRef(null);
+  const move = (direction) => railRef.current?.scrollBy({ left: direction * 300, behavior: "smooth" });
+
+  return (
+    <section className="hotel-chains-section" id="hotel-chains" aria-labelledby="hotel-chains-title">
+      <div className="hotel-chains-heading">
+        <div>
+          <h2 id="hotel-chains-title">Zincir Oteller</h2>
+          <p>Türkiye ve yurt dışında farklı konseptlerle hizmet veren popüler otel zincirlerini keşfedin.</p>
+        </div>
+        <div className="hotel-chains-controls" aria-label="Zincir otel kartlarını kaydır">
+          <button type="button" aria-label="Önceki zincir oteller" onClick={() => move(-1)}><ChevronLeft size={20} /></button>
+          <button type="button" aria-label="Sonraki zincir oteller" onClick={() => move(1)}><ChevronRight size={20} /></button>
+        </div>
+      </div>
+
+      <div className="hotel-chains-rail" ref={railRef}>
+        {hotelChains.map((chain) => (
+          <article className="hotel-chain-card" key={chain.title}>
+            <a className="hotel-chain-image" href={chain.href} aria-label={`${chain.title} sayfasını incele`}>
+              <img src={chain.image} alt="" loading="lazy" />
+            </a>
+            <div className="hotel-chain-card-body">
+              <h3><a href={chain.href}>{chain.title}<ArrowRight size={16} aria-hidden="true" /></a></h3>
+              <p>{chain.description}</p>
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+  );
+}
+
 function ThemeGrid() {
   const [openTheme, setOpenTheme] = useState(0);
 
@@ -2338,6 +2411,8 @@ export function App() {
           <TopRatedHotelsSection />
 
           <AffordableHotelsSection />
+
+          <HotelChainsSection />
 
           <RoomTypesSection />
 
