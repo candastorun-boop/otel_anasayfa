@@ -3214,10 +3214,8 @@ input:focus-visible {
 .more-hotels-panel a {
   min-height: 48px;
   padding: 9px 12px;
-  display: grid;
-  grid-template-columns: 17px minmax(0, 1fr);
+  display: flex;
   align-items: center;
-  gap: 7px;
   border: 1px solid transparent;
   border-radius: 7px;
   background: #f3f7fc;
@@ -3226,10 +3224,6 @@ input:focus-visible {
   font-weight: 600;
   line-height: 15px;
   transition: border-color 160ms ease, background-color 160ms ease;
-}
-
-.more-hotels-panel a > svg {
-  color: #0875f5;
 }
 
 .more-hotels-panel a:hover,

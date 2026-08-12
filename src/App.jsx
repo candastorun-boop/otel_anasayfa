@@ -2242,7 +2242,6 @@ function MoreHotels() {
 
       <div className="more-hotels-panels">
         {discoveryLinkGroups.map((group, index) => {
-          const Icon = group.icon;
           return (
             <section
               className="more-hotels-panel"
@@ -2256,7 +2255,6 @@ function MoreHotels() {
                 {group.links.map((link) => (
                   <li key={link.href}>
                     <a href={link.href}>
-                      <Icon size={16} aria-hidden="true" />
                       <span>{link.label}</span>
                     </a>
                   </li>
