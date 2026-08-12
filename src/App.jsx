@@ -1072,6 +1072,52 @@ const faqGroups = [
   },
 ];
 
+const discoveryLinkGroups = [
+  {
+    title: "Popüler Otel Bölgeleri",
+    icon: MapPin,
+    tone: "region",
+    links: [
+      { label: "Alaçatı Otelleri", href: "https://www.etstur.com/Alacati-Otelleri" },
+      { label: "Ayvalık Otelleri", href: "https://www.etstur.com/Ayvalik-Otelleri" },
+      { label: "Didim Otelleri", href: "https://www.etstur.com/Didim-Otelleri" },
+      { label: "Bozcaada Otelleri", href: "https://www.etstur.com/Bozcaada-Otelleri" },
+      { label: "Cunda Otelleri", href: "https://www.etstur.com/Cunda-Otelleri" },
+      { label: "Datça Otelleri", href: "https://www.etstur.com/Datca-Otelleri" },
+      { label: "Side Otelleri", href: "https://www.etstur.com/Side-Otelleri" },
+      { label: "Kapadokya Otelleri", href: "https://www.etstur.com/Kapadokya-Otelleri" },
+    ],
+  },
+  {
+    title: "Diğer Otel Temaları",
+    icon: Sparkles,
+    tone: "theme",
+    links: [
+      { label: "Bungalov Oteller", href: "https://www.etstur.com/Bungalov-Oteller" },
+      { label: "Yaza Özel Etkinlikli Oteller", href: "https://www.etstur.com/Yaza-Ozel-Etkinligi-Olan-Oteller" },
+      { label: "Crystal Otelleri", href: "https://www.etstur.com/Crystal-Otelleri" },
+      { label: "Kirman Premium Otelleri", href: "https://www.etstur.com/Kirman-Premium-Otelleri" },
+      { label: "TUI Blue Otelleri", href: "https://www.etstur.com/Tui-Blue-Otelleri" },
+      { label: "Voyage Otelleri", href: "https://www.etstur.com/Voyage-Otelleri" },
+    ],
+  },
+  {
+    title: "Bölgeye Özel Otel Seçenekleri",
+    icon: Hotel,
+    tone: "combined",
+    links: [
+      { label: "Alaçatı Butik Oteller", href: "https://www.etstur.com/Alacati-Butik-Oteller" },
+      { label: "Antalya Aquaparklı Oteller", href: "https://www.etstur.com/Antalya-Aquaparkli-Oteller" },
+      { label: "Marmaris Her Şey Dahil Oteller", href: "https://www.etstur.com/Marmaris-Her-Sey-Dahil-Oteller" },
+      { label: "Kuşadası Aquaparklı Oteller", href: "https://www.etstur.com/Kusadasi-Aquaparkli-Oteller" },
+      { label: "Fethiye Butik Oteller", href: "https://www.etstur.com/Fethiye-Butik-Oteller" },
+      { label: "Antalya Balayı Otelleri", href: "https://www.etstur.com/Antalya-Balayi-Otelleri" },
+      { label: "Bodrum Butik Oteller", href: "https://www.etstur.com/Bodrum-Butik-Otelleri" },
+      { label: "Yalova Termal Oteller", href: "https://www.etstur.com/Yalova-Termal-Oteller" },
+    ],
+  },
+];
+
 const popularLinkGroups = [
   {
     title: "Popüler Bölgeler",
@@ -2168,6 +2214,40 @@ function FAQ() {
   );
 }
 
+function MoreHotels() {
+  return (
+    <section className="more-hotels-section" aria-labelledby="more-hotels-title">
+      <div className="more-hotels-heading">
+        <span>Alternatifleri incele</span>
+        <h2 id="more-hotels-title">Daha Fazla Oteli Keşfedin</h2>
+        <p>Farklı bölgeler, otel temaları ve bölgeye özel konaklama seçenekleri arasından yeni alternatifler keşfedin.</p>
+      </div>
+
+      <div className="more-hotels-groups">
+        {discoveryLinkGroups.map((group) => {
+          const Icon = group.icon;
+          return (
+            <section className="more-hotels-group" data-tone={group.tone} key={group.title} aria-labelledby={`more-hotels-${group.tone}`}>
+              <h3 id={`more-hotels-${group.tone}`}>{group.title}</h3>
+              <ul>
+                {group.links.map((link) => (
+                  <li key={link.href}>
+                    <a href={link.href}>
+                      <Icon size={18} aria-hidden="true" />
+                      <span>{link.label}</span>
+                      <ArrowRight size={16} aria-hidden="true" />
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          );
+        })}
+      </div>
+    </section>
+  );
+}
+
 function Footer() {
   return (
     <footer className="site-footer">
@@ -2244,6 +2324,8 @@ export function App() {
           <HotelAmenitiesSection />
 
           <FAQ />
+
+          <MoreHotels />
         </div>
       </main>
 
