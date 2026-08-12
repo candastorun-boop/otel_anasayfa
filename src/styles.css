@@ -766,9 +766,9 @@ input:focus-visible {
 .popular-searches h2 {
   margin: 0;
   color: var(--ink);
-  font-size: 19px;
+  font-size: 20px;
   font-weight: 600;
-  line-height: 26px;
+  line-height: 28px;
 }
 
 .popular-searches > ul {
@@ -810,7 +810,7 @@ input:focus-visible {
   margin-bottom: 16px;
 }
 
-.campaign-section h2 {
+.campaign-section .section-heading-row h2 {
   margin: 0;
   color: var(--ink);
   font-size: 20px;
@@ -3847,8 +3847,8 @@ input:focus-visible {
   }
 
   .popular-searches h2 {
-    font-size: 17px;
-    line-height: 23px;
+    font-size: 18px;
+    line-height: 25px;
   }
 
   .popular-searches > ul {
@@ -4578,7 +4578,7 @@ input:focus-visible {
     margin-bottom: 14px;
   }
 
-  .campaign-section h2 {
+  .campaign-section .section-heading-row h2 {
     font-size: 18px;
     line-height: 25px;
   }
