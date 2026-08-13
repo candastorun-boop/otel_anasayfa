@@ -1565,16 +1565,14 @@ function OpportunityCards() {
   );
 }
 
-function RegionRailGroup({ title, href, items, chips = [], content }) {
+function RegionRailGroup({ title, items, chips = [], content }) {
   const railRef = useRef(null);
   const move = (direction) => railRef.current?.scrollBy({ left: direction * 304, behavior: "smooth" });
 
   return (
     <section className="region-rail-group" aria-labelledby={`${title}-title`}>
       <div className="region-group-heading">
-        <h3 id={`${title}-title`}>
-          {href ? <a href={href}>{title}<ArrowRight size={16} aria-hidden="true" /></a> : title}
-        </h3>
+        <h3 id={`${title}-title`}>{title}</h3>
         <div className="rail-controls">
           <button aria-label={`${title} için önceki lokasyonlar`} onClick={() => move(-1)}><ChevronLeft size={21} /></button>
           <button aria-label={`${title} için sonraki lokasyonlar`} onClick={() => move(1)}><ChevronRight size={21} /></button>
@@ -1605,8 +1603,7 @@ function PopularRegionsSection() {
   const regionGroups = [
     {
       tab: "Tatil Otelleri",
-      title: "Yurt İçi Tatil Otelleri",
-      href: "https://www.etstur.com/Yurtici-Otel",
+      title: "Tatil Otelleri",
       items: popularRegions,
       chips: vacationRegionChips,
       content: "Deniz, doğa ve sakinlik arayanlar için yurt içindeki farklı konaklama seçeneklerini; tesis olanakları, konum ve pansiyon türlerine göre karşılaştırabilirsiniz.",
@@ -1614,7 +1611,6 @@ function PopularRegionsSection() {
     {
       tab: "Şehir Otelleri",
       title: "Şehir Otelleri",
-      href: "https://www.etstur.com/Sehir-Otelleri",
       items: cityRegions,
       chips: cityRegionChips,
       content: "İş seyahatleri, kısa kaçamaklar ve kültür rotaları için merkezi konumda yer alan şehir otelleri arasından planınıza uygun seçenekleri inceleyebilirsiniz.",
@@ -1648,7 +1644,7 @@ function PopularRegionsSection() {
           key={group.title}
           role="tabpanel"
         >
-          <RegionRailGroup title={group.title} href={group.href} items={group.items} chips={group.chips} content={group.content} />
+          <RegionRailGroup title={group.title} items={group.items} chips={group.chips} content={group.content} />
         </div>
       ))}
     </section>

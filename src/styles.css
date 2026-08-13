@@ -1151,33 +1151,6 @@ input:focus-visible {
   line-height: 22px;
 }
 
-.region-group-heading h3 a {
-  display: inline-flex;
-  align-items: center;
-  gap: 7px;
-  color: inherit;
-  text-decoration: underline;
-  text-decoration-color: #b8d3fd;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 4px;
-  transition: color 160ms ease;
-}
-
-.region-group-heading h3 a svg {
-  color: var(--blue);
-  transition: transform 160ms ease;
-}
-
-.region-group-heading h3 a:hover,
-.region-group-heading h3 a:focus-visible {
-  color: var(--blue);
-}
-
-.region-group-heading h3 a:hover svg,
-.region-group-heading h3 a:focus-visible svg {
-  transform: translateX(3px);
-}
-
 .region-image-rail {
   grid-auto-columns: calc((100% - 32px) / 3);
 }
