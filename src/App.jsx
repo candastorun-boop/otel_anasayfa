@@ -1604,8 +1604,8 @@ function RegionRailGroup({ title, href, items, chips = [], content }) {
 function PopularRegionsSection() {
   const regionGroups = [
     {
-      tab: "Yurtiçi Otelleri",
-      title: "Yurtiçi Tatil Otelleri",
+      tab: "Tatil Otelleri",
+      title: "Yurt İçi Tatil Otelleri",
       href: "https://www.etstur.com/Yurtici-Otel",
       items: popularRegions,
       chips: vacationRegionChips,
@@ -1619,28 +1619,13 @@ function PopularRegionsSection() {
       chips: cityRegionChips,
       content: "İş seyahatleri, kısa kaçamaklar ve kültür rotaları için merkezi konumda yer alan şehir otelleri arasından planınıza uygun seçenekleri inceleyebilirsiniz.",
     },
-    {
-      tab: "Kıbrıs Otelleri",
-      title: "Kıbrıs Otelleri",
-      href: "https://www.etstur.com/Kibris",
-      items: cyprusRegions,
-      content: "Sahil otellerinden şehir merkezindeki tesislere kadar Kıbrıs'ta konaklama seçeneklerini tatil beklentinize ve tercih ettiğiniz bölgeye göre keşfedebilirsiniz.",
-    },
-    {
-      tab: "Yurtdışı Otelleri",
-      title: "Yurtdışı Otelleri",
-      href: "https://www.etstur.com/Yurt-Disi-Otelleri",
-      items: internationalRegions,
-      chips: internationalRegionChips,
-      content: "Yakın şehirlerden tropik adalara kadar farklı ülkelerdeki konaklama seçeneklerini seyahat planınıza ve tatil tarzınıza göre değerlendirebilirsiniz.",
-    },
   ];
   const [activeRegion, setActiveRegion] = useState(0);
 
   return (
     <section className="popular-regions-section" id="regions" aria-labelledby="popular-regions-title">
-      <h2 id="popular-regions-title">Popüler Otel Bölgeleri</h2>
-      <div className="region-tabs" role="tablist" aria-label="Popüler otel bölgeleri">
+      <h2 id="popular-regions-title">Popüler Yurtiçi Otel Bölgeleri</h2>
+      <div className="region-tabs" role="tablist" aria-label="Popüler yurtiçi otel bölgeleri">
         {regionGroups.map((group, index) => (
           <button
             aria-controls={`region-tab-panel-${index}`}
