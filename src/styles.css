@@ -1088,12 +1088,39 @@ input:focus-visible {
   scroll-margin-top: 136px;
 }
 
-.popular-regions-section > h2 {
-  margin: 0 0 22px;
+.popular-regions-heading {
+  margin-bottom: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.popular-regions-heading h2 {
+  margin: 0;
   color: var(--ink);
   font-size: 20px;
   font-weight: 600;
   line-height: 28px;
+}
+
+.popular-regions-heading a {
+  min-height: 36px;
+  padding: 7px 0;
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 6px;
+  color: var(--blue);
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 18px;
+}
+
+.popular-regions-heading a:hover,
+.popular-regions-heading a:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .region-tabs {
@@ -3845,10 +3872,22 @@ input:focus-visible {
     scroll-margin-top: 200px;
   }
 
-  .popular-regions-section > h2 {
-    margin-bottom: 18px;
+  .popular-regions-heading {
+    margin-bottom: 14px;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .popular-regions-heading h2 {
     font-size: 18px;
     line-height: 25px;
+  }
+
+  .popular-regions-heading a {
+    min-height: 40px;
+    padding: 8px 0;
+    font-size: 11px;
   }
 
   .region-tabs {

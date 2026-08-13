@@ -1620,7 +1620,13 @@ function PopularRegionsSection() {
 
   return (
     <section className="popular-regions-section" id="regions" aria-labelledby="popular-regions-title">
-      <h2 id="popular-regions-title">Popüler Yurtiçi Otel Bölgeleri</h2>
+      <div className="popular-regions-heading">
+        <h2 id="popular-regions-title">Popüler Yurtiçi Otel Bölgeleri</h2>
+        <a href="https://www.etstur.com/Yurtici-Otel">
+          Bütün Yurtiçi Otelleri
+          <ArrowRight size={16} aria-hidden="true" />
+        </a>
+      </div>
       <div className="region-tabs" role="tablist" aria-label="Popüler yurtiçi otel bölgeleri">
         {regionGroups.map((group, index) => (
           <button
