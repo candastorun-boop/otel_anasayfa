@@ -281,7 +281,7 @@ const cityRegionChips = [
 const cyprusRegions = [
   { title: "Lefkoşa Otelleri", image: "assets/cyprus-lefkosa.jpg", count: "Şehir otelleri", href: "https://www.etstur.com/Lefkosa-Otelleri" },
   { title: "Girne Otelleri", image: "assets/cyprus-girne.jpg", count: "Sahil otelleri", href: "https://www.etstur.com/Girne-Otelleri" },
-  { title: "Bafra Otelleri", image: "assets/cyprus-bafra.jpg", count: "Resort oteller", href: "https://www.etstur.com/Bafra-Otelleri" },
+  { title: "Bafra Otelleri", image: "assets/cyprus-bafra.jpg", count: "Resort oteller", href: "https://www.etstur.com/Kibris-Bafra-Otelleri" },
   { title: "Gazimağusa Otelleri", image: "assets/cyprus-gazimagusa.jpg", count: "Tarihi rota", href: "https://www.etstur.com/Gazimagusa-Otelleri" },
   { title: "İskele Otelleri", image: "assets/cyprus-hotels.jpg", count: "Sahil otelleri", href: "https://www.etstur.com/Iskele-Otelleri" },
   { title: "Güzelyurt Otelleri", image: "assets/cyprus-girne.jpg", count: "Ada konaklaması", href: "https://www.etstur.com/Guzelyurt-Otelleri" },
@@ -959,6 +959,39 @@ const internationalRegionChips = [
   { label: "Mısır Otelleri", href: "https://www.etstur.com/egypt-690" },
   { label: "Dubai Otelleri", href: "https://www.etstur.com/dubai-60715" },
   { label: "Marsa Alam Otelleri", href: "https://www.etstur.com/marsa-alam-241172" },
+];
+
+const egyptRegions = [
+  { title: "Şarm El-Şeyh Otelleri", image: "assets/popular-hotels/rixos-sharm-adult.jpg", count: "Kızıldeniz tatili", href: "https://www.etstur.com/sharm-el-sheikh-241873" },
+  { title: "Hurgada Otelleri", image: "assets/popular-hotels/rixos-premium-seagate.jpg", count: "Sahil ve resort oteller", href: "https://www.etstur.com/hurghada-241188" },
+  { title: "Marsa Alam Otelleri", image: "assets/theme-sea.jpg", count: "Dalış ve sahil otelleri", href: "https://www.etstur.com/marsa-alam-241172" },
+  { title: "Kahire Otelleri", image: "assets/city-hotels.jpg", count: "Şehir otelleri", href: "https://www.etstur.com/cairo-268373" },
+  { title: "Gize Otelleri", image: "assets/theme-award.jpg", count: "Tarihi bölge otelleri", href: "https://www.etstur.com/giza-governorate-233602" },
+  { title: "İskenderiye Otelleri", image: "assets/theme-honeymoon.jpg", count: "Akdeniz kıyısı otelleri", href: "https://www.etstur.com/alexandria-governorate-327973" },
+];
+
+const egyptRegionChips = [
+  { label: "Kızıldeniz Otelleri", href: "https://www.etstur.com/red-sea-governorate-233459" },
+  { label: "Güney Sina Otelleri", href: "https://www.etstur.com/south-sinai-governorate-233424" },
+  { label: "Asvan Otelleri", href: "https://www.etstur.com/aswan-governorate-327987" },
+  { label: "Port Said Otelleri", href: "https://www.etstur.com/port-said-233697" },
+];
+
+const greeceRegions = [
+  { title: "Güney Ege Otelleri", image: "assets/theme-sea.jpg", count: "Ada ve sahil otelleri", href: "https://www.etstur.com/south-aegean-1001032" },
+  { title: "Santorini Otelleri", image: "assets/theme-honeymoon.jpg", count: "Ada otelleri", href: "https://www.etstur.com/santorini-1001282" },
+  { title: "Girit Adası Otelleri", image: "assets/popular-bodrum.jpg", count: "Sahil ve şehir otelleri", href: "https://www.etstur.com/crete-1001010" },
+  { title: "Halkidiki Otelleri", image: "assets/domestic-hotels.jpg", count: "Sahil otelleri", href: "https://www.etstur.com/halkidiki-1001006" },
+  { title: "İyon Adaları Otelleri", image: "assets/cyprus-hotels.jpg", count: "Ada konaklamaları", href: "https://www.etstur.com/ionian-islands-162614" },
+  { title: "Milos Otelleri", image: "assets/popular-sapanca.jpg", count: "Butik ada otelleri", href: "https://www.etstur.com/milos-1005215" },
+];
+
+const greeceRegionChips = [
+  { label: "Peloponez Otelleri", href: "https://www.etstur.com/peloponnese-region-1001020" },
+  { label: "Saronik Adaları Otelleri", href: "https://www.etstur.com/saronic-islands-1001075" },
+  { label: "Attika Otelleri", href: "https://www.etstur.com/attica-162641" },
+  { label: "Tesalya Otelleri", href: "https://www.etstur.com/thessaly-1001029" },
+  { label: "Orta Makedonya Otelleri", href: "https://www.etstur.com/central-macedonia-1001054" },
 ];
 
 const faqItems = [
@@ -1647,6 +1680,82 @@ function PopularRegionsSection() {
           aria-labelledby={`region-tab-${index}`}
           hidden={activeRegion !== index}
           id={`region-tab-panel-${index}`}
+          key={group.title}
+          role="tabpanel"
+        >
+          <RegionRailGroup title={group.title} items={group.items} chips={group.chips} content={group.content} />
+        </div>
+      ))}
+    </section>
+  );
+}
+
+function PopularInternationalRegionsSection() {
+  const regionGroups = [
+    {
+      tab: "Popüler Yurt Dışı Lokasyonları",
+      title: "Popüler Yurt Dışı Lokasyonları",
+      items: internationalRegions,
+      chips: internationalRegionChips,
+      content: "Şehir tatillerinden sahil rotalarına kadar yurt dışındaki popüler otel bölgelerini; konum, tesis özellikleri ve tatil beklentinize göre karşılaştırabilirsiniz.",
+    },
+    {
+      tab: "Kıbrıs",
+      title: "Kıbrıs Otelleri",
+      items: cyprusRegions,
+      chips: [],
+      content: "Kıbrıs'ın sahil, şehir ve resort bölgelerindeki otelleri konumlarına ve sundukları tatil deneyimine göre keşfedebilirsiniz.",
+    },
+    {
+      tab: "Mısır",
+      title: "Mısır Otelleri",
+      items: egyptRegions,
+      chips: egyptRegionChips,
+      content: "Kızıldeniz kıyısındaki resortlardan Kahire ve Gize çevresindeki şehir otellerine kadar Mısır'ın öne çıkan konaklama bölgelerini inceleyebilirsiniz.",
+    },
+    {
+      tab: "Yunanistan",
+      title: "Yunanistan Otelleri",
+      items: greeceRegions,
+      chips: greeceRegionChips,
+      content: "Yunan adaları, sahil bölgeleri ve kültür rotalarında yer alan farklı otel seçeneklerini tatil planınıza göre karşılaştırabilirsiniz.",
+    },
+  ];
+  const [activeRegion, setActiveRegion] = useState(0);
+
+  return (
+    <section
+      className="popular-regions-section international-regions-section"
+      id="international-regions"
+      aria-labelledby="international-regions-title"
+    >
+      <div className="popular-regions-heading">
+        <h2 id="international-regions-title">Popüler Yurt Dışı Otel Bölgeleri</h2>
+        <a href="https://www.etstur.com/Yurt-Disi-Otelleri">
+          Bütün Yurt Dışı Otelleri
+          <ArrowRight size={16} aria-hidden="true" />
+        </a>
+      </div>
+      <div className="region-tabs international-region-tabs" role="tablist" aria-label="Popüler yurt dışı otel bölgeleri">
+        {regionGroups.map((group, index) => (
+          <button
+            aria-controls={`international-region-tab-panel-${index}`}
+            aria-selected={activeRegion === index}
+            id={`international-region-tab-${index}`}
+            key={group.title}
+            onClick={() => setActiveRegion(index)}
+            role="tab"
+            type="button"
+          >
+            {group.tab}
+          </button>
+        ))}
+      </div>
+      {regionGroups.map((group, index) => (
+        <div
+          aria-labelledby={`international-region-tab-${index}`}
+          hidden={activeRegion !== index}
+          id={`international-region-tab-panel-${index}`}
           key={group.title}
           role="tabpanel"
         >
@@ -2390,6 +2499,8 @@ export function App() {
           <CampaignSection />
 
           <PopularRegionsSection />
+
+          <PopularInternationalRegionsSection />
 
           <HotelTypesSection />
 

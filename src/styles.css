@@ -1088,6 +1088,10 @@ input:focus-visible {
   scroll-margin-top: 136px;
 }
 
+.international-regions-section {
+  padding-top: 0;
+}
+
 .popular-regions-heading {
   margin-bottom: 22px;
   display: flex;
@@ -3872,6 +3876,10 @@ input:focus-visible {
     scroll-margin-top: 200px;
   }
 
+  .international-regions-section {
+    padding-top: 0;
+  }
+
   .popular-regions-heading {
     margin-bottom: 14px;
     align-items: flex-start;
@@ -3904,6 +3912,10 @@ input:focus-visible {
     border: 1px solid #dbe4f0;
     border-radius: 7px;
     font-size: 12px;
+  }
+
+  .international-region-tabs button {
+    flex-basis: calc(50% - 4px);
   }
 
   .region-tabs button[aria-selected="true"] {
